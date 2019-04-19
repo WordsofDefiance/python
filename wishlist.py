@@ -19,3 +19,15 @@ video_games = [
 
 for game in video_games:
     print("* " + game)
+
+def display_wishlist(display_name, wishes):
+    items = wishes
+    print(display_name + ":")
+    suggested_gift = wishes.pop(0)
+    print("=============>", suggested_gift, "<=========")
+    for wish in items:
+        print("* " + wish)
+    print()
+
+display_wishlist("Books", books)
+display_wishlist("Video Games", video_games)
