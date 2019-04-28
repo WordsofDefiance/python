@@ -26,9 +26,7 @@ def add_to_list(item, list):
         position = abs(int(position))
     except ValueError:
         position = None
-    if position is 0:
-        list.insert(0, item)
-    elif position is not None:
+    if position is not None:
         list.insert(position - 1, item)
     else: 
         shopping_list.append(item)
